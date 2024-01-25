@@ -6,5 +6,6 @@ export const global = {
   body: {
     overflowX: "hidden",
     overscrollBehavior: "none",
+    textStyles: "body",
   },
 };

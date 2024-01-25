@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ChakraProviders } from "@/lib/chakra/provider/chakra-provider";
+import { manrope } from "@/public/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={manrope.className}>
       <body>
         <ChakraProviders>{children}</ChakraProviders>
       </body>
