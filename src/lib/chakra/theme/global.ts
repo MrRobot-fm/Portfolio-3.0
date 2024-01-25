@@ -7,5 +7,6 @@ export const global = {
     overflowX: "hidden",
     overscrollBehavior: "none",
     textStyles: "body",
+    color: "primary.black",
   },
 };

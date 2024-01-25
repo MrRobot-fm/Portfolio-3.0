@@ -4,3 +4,4 @@ export * from "./sizes";
 export * from "./space";
 export * from "./text-styles";
 export * from "./fonts";
+export * from "./colors";
