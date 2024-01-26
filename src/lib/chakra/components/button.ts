@@ -15,7 +15,7 @@ const baseStyle = definePartsStyle({
     alignItems: "center",
     justifyContent: "center",
     textStyle: "heading4",
-    transition: "all 0.4s ease-in-out",
+    transition: "all 0.4s ease",
   },
   label: {
     display: "inline-flex",
@@ -29,7 +29,7 @@ const baseStyle = definePartsStyle({
     w: 16,
     h: 16,
     display: "inline-flex",
-    transition: "transform 0.3s ease-in-out",
+    transition: "transform 0.3s ease",
   },
 });
 
@@ -59,7 +59,7 @@ const sizes = {
 };
 
 const variants = {
-  primary: ({ size = "default" }: StyleFunctionProps) => {
+  primary: ({ size = "default", isMenuLink = false }: StyleFunctionProps) => {
     return {
       root: {
         bg: "primary.black",
@@ -82,6 +82,11 @@ const variants = {
             opacity: 0.5,
           },
         }),
+
+        ...(isMenuLink && {
+          fontSize: { base: 35, md: 40 },
+          fontWeight: 800,
+        }),
       },
 
       icon: {
@@ -91,7 +96,7 @@ const variants = {
       },
     };
   },
-  secondary: ({ size = "default" }: StyleFunctionProps) => {
+  secondary: ({ size = "default", isMenuLink = false }: StyleFunctionProps) => {
     return {
       root: {
         bg: "grey.5",
@@ -111,6 +116,11 @@ const variants = {
             border: 0,
             opacity: 0.5,
           },
+        }),
+
+        ...(isMenuLink && {
+          fontSize: { base: 35, md: 40 },
+          fontWeight: 800,
         }),
       },
 

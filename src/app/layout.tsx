@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { menuLinks } from "@/utils/constants/menu-links";
 import { ChakraProviders } from "@/lib/chakra/provider/chakra-provider";
+import { Navbar } from "@/components/molecules/Navbar/Navbar";
 import { manrope } from "@/public/fonts";
 
 export const metadata: Metadata = {
@@ -15,7 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={manrope.className}>
       <body>
-        <ChakraProviders>{children}</ChakraProviders>
+        <ChakraProviders>
+          <Navbar links={menuLinks} />
+          {children}
+        </ChakraProviders>
       </body>
     </html>
   );

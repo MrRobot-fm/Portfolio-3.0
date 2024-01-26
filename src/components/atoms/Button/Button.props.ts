@@ -8,4 +8,5 @@ export interface ButtonProps extends HTMLChakraProps<"button">, ThemingProps {
   label?: string;
   children?: ReactNode;
   icon?: IconProps;
+  isMenuLink?: boolean;
 }
