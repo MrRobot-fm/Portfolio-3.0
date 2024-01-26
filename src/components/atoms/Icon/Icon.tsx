@@ -31,3 +31,5 @@ export const Icon = (props: IconProps) => {
     </chakra.div>
   );
 };
+
+Icon.displayName = "Icon";

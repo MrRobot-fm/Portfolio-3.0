@@ -7,15 +7,15 @@ const baseStyle = {
 };
 
 const sizes = {
-  xs: { w: 14, h: 14 },
-  sm: { w: 16, h: 16 },
-  md: { w: 18, h: 18 },
+  xs: { w: 16, h: 16 },
+  sm: { w: 22, h: 22 },
+  md: { w: 30, h: 30 },
 };
 
 export const Icon = defineStyleConfig({
   baseStyle,
   sizes,
   defaultProps: {
-    size: "sm",
+    size: "xs",
   },
 });

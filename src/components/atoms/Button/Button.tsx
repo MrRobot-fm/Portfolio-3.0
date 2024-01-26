@@ -16,6 +16,7 @@ export const Button = forwardRef<ButtonProps, "button">(
       icon,
       children,
       size,
+      isMenuLink,
       ...rest
     } = props || {};
 
@@ -26,6 +27,7 @@ export const Button = forwardRef<ButtonProps, "button">(
 
     const styles = useMultiStyleConfig("Button", {
       colorScheme,
+      isMenuLink,
       size,
       variant,
     });
