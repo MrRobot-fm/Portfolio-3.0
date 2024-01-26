@@ -1,5 +1,5 @@
 import { extendTheme } from "@chakra-ui/react";
-import { Heading, Text } from "@/lib/chakra/components";
+import { Button, Heading, Icon, Text } from "@/lib/chakra/components";
 import {
   breakpoints,
   colors,
@@ -20,6 +20,8 @@ export const theme = extendTheme({
   components: {
     Heading,
     Text,
+    Icon,
+    Button,
   },
   styles: {
     global,
