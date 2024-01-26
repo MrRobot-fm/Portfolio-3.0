@@ -27,9 +27,7 @@ export const Icon = (props: IconProps) => {
 
   return (
     <chakra.div {...shared}>
-      {<Element w="auto" h="auto" fontSize="unset" />}
+      <Element w="auto" h="auto" fontSize="unset" />
     </chakra.div>
   );
 };
-
-Icon.displayName = "Icon";

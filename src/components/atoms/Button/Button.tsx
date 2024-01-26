@@ -19,7 +19,7 @@ export const Button = forwardRef<ButtonProps, "button">(
       ...rest
     } = props || {};
 
-    const { name, size: iconSize = "sm", ...restIconProps } = icon || {};
+    const { name, ...restIconProps } = icon || {};
 
     const isExternal = checkIsExternal(href);
     const external = isExternal ? { target: "_blank", rel: "noopener" } : {};
@@ -41,10 +41,7 @@ export const Button = forwardRef<ButtonProps, "button">(
                 children
               )}
               {!!name && (
-                <Icon
-                  __css={styles.icon}
-                  {...{ name, iconSize, ...restIconProps }}
-                />
+                <Icon __css={styles.icon} {...{ name, ...restIconProps }} />
               )}
             </chakra.button>
           </chakra.a>
@@ -61,9 +58,7 @@ export const Button = forwardRef<ButtonProps, "button">(
         ) : (
           children
         )}
-        {!!name && (
-          <Icon __css={styles.icon} {...{ name, iconSize, ...restIconProps }} />
-        )}
+        {!!name && <Icon __css={styles.icon} {...{ name, ...restIconProps }} />}
       </chakra.button>
     );
   }

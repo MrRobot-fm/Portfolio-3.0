@@ -7,9 +7,9 @@ const baseStyle = {
 };
 
 const sizes = {
-  xs: { w: "2rem", h: "2rem" },
-  sm: { w: "2.4rem", h: "2.4rem" },
-  md: { w: "4rem", h: "4rem" },
+  xs: { w: 14, h: 14 },
+  sm: { w: 16, h: 16 },
+  md: { w: 18, h: 18 },
 };
 
 export const Icon = defineStyleConfig({
