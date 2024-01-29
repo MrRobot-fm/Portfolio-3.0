@@ -1,9 +1,13 @@
-import { Flex, Heading } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
+import { homepageData } from "@/utils/constants/data/homepage";
+import { HeroSection } from "@/components/organism/HeroSection/HeroSection";
 
 export default function Home() {
+  const { heroBlock } = homepageData;
+
   return (
-    <Flex justifyContent="center" alignItems="center" h="300vh">
-      <Heading>Portfolio 3.0 boilerplate</Heading>
-    </Flex>
+    <Container>
+      <HeroSection {...heroBlock} />
+    </Container>
   );
 }
