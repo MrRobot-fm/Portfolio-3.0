@@ -1,17 +1,13 @@
 "use client";
 
-import {
-  Box,
-  Flex,
-  Text,
-  UnorderedList,
-  useDisclosure,
-} from "@chakra-ui/react";
+import { Box, Flex, UnorderedList, useDisclosure } from "@chakra-ui/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import useBreakpoints from "@/hooks/use-breakpoints";
+import { CustomImage } from "@/components/atoms/CustomImage/CustomImage";
 import { Icon } from "@/components/atoms/Icon/Icon";
 import { NavLink } from "@/components/atoms/NavLink/NavLink";
+import Logo from "@/assets/portfolio-logo.svg";
 import { DropdownMenu } from "../DropdownMenu/DropdownMenu";
 import { NavbarProps } from "./Navbar.props";
 
@@ -63,21 +59,11 @@ export const Navbar = (props: NavbarProps) => {
           alignItems="center"
           justifyContent="center"
           zIndex={100}
-          mixBlendMode="difference"
         >
-          <Link href="/">
-            <Text fontSize={28} fontWeight={800} color="primary.white">
-              federico.
-              <Text
-                mixBlendMode="color"
-                as="span"
-                fontSize="inherit"
-                fontWeight="inherit"
-                color="#696969"
-              >
-                dev
-              </Text>
-            </Text>
+          <Link href="/" onClick={onClose}>
+            <Box h={30} w={180}>
+              <CustomImage src={Logo} alt="app-logo" />
+            </Box>
           </Link>
         </Box>
         <UnorderedList
