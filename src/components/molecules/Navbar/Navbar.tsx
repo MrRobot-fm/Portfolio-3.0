@@ -53,7 +53,12 @@ export const Navbar = (props: NavbarProps) => {
       bg="primary.white"
       zIndex={100}
     >
-      <Flex as="header" justifyContent="space-between" alignItems="center">
+      <Flex
+        as="header"
+        maxW={1800}
+        justifyContent="space-between"
+        alignItems="center"
+      >
         <Box
           display="flex"
           alignItems="center"

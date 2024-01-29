@@ -64,6 +64,7 @@ const variants = {
       root: {
         bg: "primary.black",
         color: "primary.white",
+        borderWidth: 1,
 
         _hover: {
           bg: "primary.white",
@@ -76,6 +77,8 @@ const variants = {
         ...(["link", "textLink"].includes(size) && {
           bg: "transparent",
           rounded: 0,
+          borderWidth: 0,
+
           justifyContent: "space-between",
           _hover: {
             border: 0,
@@ -101,6 +104,8 @@ const variants = {
       root: {
         bg: "grey.5",
         color: "primary.black",
+        borderWidth: 1,
+
         _hover: {
           bg: "primary.white",
           borderWidth: 1,
@@ -111,6 +116,8 @@ const variants = {
         ...(["link", "textLink"].includes(size) && {
           bg: "transparent",
           rounded: 0,
+          borderWidth: 0,
+
           justifyContent: "space-between",
           _hover: {
             border: 0,
