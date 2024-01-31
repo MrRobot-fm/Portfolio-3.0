@@ -5,6 +5,7 @@ import {
   CustomImage,
   Heading,
   Icon,
+  ProjectCard,
   Text,
 } from "@/lib/chakra/components";
 import {
@@ -31,6 +32,7 @@ export const theme = extendTheme({
     Button,
     CustomImage,
     Container,
+    ProjectCard,
   },
   styles: {
     global,

@@ -2,6 +2,8 @@ import { defineStyle, defineStyleConfig } from "@chakra-ui/react";
 
 const baseStyle = {
   maxW: "full",
+  display: "flex",
+  flexDir: "column",
   gap: { base: 80, md: 120, lg: 160, xl: 240 },
 };
 

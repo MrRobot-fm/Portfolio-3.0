@@ -38,6 +38,7 @@ export default function ButtonsPage() {
       </Box>
       <Box w={200}>
         <Button
+          url="https://mapty-project-js.netlify.app"
           label="all projects"
           icon={{ name: "arrow" }}
           size="link"
