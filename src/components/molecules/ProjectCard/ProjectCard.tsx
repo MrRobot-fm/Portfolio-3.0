@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import NextLink from "next/link";
-import { moveUpScaleAndShowVariant } from "@/utils/animations/animations";
+import { moveUpScaleAndShowVariant50 } from "@/utils/animations/animations";
 import { Button } from "@/components/atoms/Button/Button";
 import { CustomImage } from "@/components/atoms/CustomImage/CustomImage";
 import type { ProjectCardProps } from "./ProjectCardProps";
@@ -39,7 +39,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
             <chakra.div
               as={motion.div}
               __css={styles.descriptionWrapper}
-              variants={moveUpScaleAndShowVariant}
+              variants={moveUpScaleAndShowVariant50}
               initial="hidden"
               whileInView="show"
               viewport={{ amount: 0.3, once: true }}
@@ -53,7 +53,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
             <chakra.div
               as={motion.div}
               __css={styles.buttonWrapper}
-              variants={moveUpScaleAndShowVariant}
+              variants={moveUpScaleAndShowVariant50}
               initial="hidden"
               whileInView="show"
               viewport={{ amount: 0.3, once: true }}
@@ -73,7 +73,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
             <chakra.div
               as={motion.div}
               __css={styles.imageContainer}
-              variants={moveUpScaleAndShowVariant}
+              variants={moveUpScaleAndShowVariant50}
               initial="hidden"
               whileInView="show"
               viewport={{ amount: 0.3, once: true }}

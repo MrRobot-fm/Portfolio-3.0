@@ -17,11 +17,11 @@ export const menuLinks: MenuLinkModel[] = [
     path: "/#skills",
   },
   {
-    label: "Progetti",
+    label: "Projects",
     path: "/#projects",
   },
   {
-    label: "Contatti",
+    label: "Contacts",
     path: "/#contact",
   },
 ];
