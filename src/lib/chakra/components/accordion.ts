@@ -10,6 +10,15 @@ const baseStyle = definePartsStyle({
     py: 24,
   },
   button: {
+    "&.chakra-accordion__button": {
+      "> h2": {
+        flex: 1,
+        textStyle: "heading1",
+        fontWeight: 500,
+        textAlign: "left",
+        color: "dark.70",
+      },
+    },
     _hover: {
       backgroundColor: "transparent",
     },

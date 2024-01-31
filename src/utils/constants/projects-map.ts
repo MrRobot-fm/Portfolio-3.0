@@ -21,7 +21,7 @@ export const projectsMap: ProjectModel[] = [
     image: TokenDiscoverImg,
     url: PROJECTS_PATH.TOKEN_DISCOVER,
     descriptions:
-      "La piattaforma mira a fornire agli utenti uno strumento per esplorare, comprendere e interagire con i token digitali.",
+      "The platform aims to provide users with a tool to explore, understand and interact with digital tokens.",
     liveDemoUrl: "https://token-discover.vercel.app",
   },
   {
@@ -30,7 +30,7 @@ export const projectsMap: ProjectModel[] = [
     image: FlightFootprintImg,
     url: PROJECTS_PATH.FLIGHT_FOOTPRINT,
     descriptions:
-      "Il progetto è stato sviluppato con l'idea di rendere consapevoli gli utenti dell'inquinamento prodotto dai viaggi aerei.",
+      "The project was developed with the idea of making users aware of the pollution produced by air travel.",
     liveDemoUrl: "https://flightfootprint.netlify.app",
   },
   {
@@ -39,7 +39,7 @@ export const projectsMap: ProjectModel[] = [
     image: SpoonacularImg,
     url: PROJECTS_PATH.SPOONACULAR,
     descriptions:
-      "Dedicato al mondo vegetariano, la piattaforma ci permette di cercare ricette ed ingredienti e rendere i nostri pasti più consapevoli e deliziosi.",
+      "Dedicated to the vegetarian world, the platform allows us to search for recipes and ingredients and make our meals more conscious and delicious.",
     liveDemoUrl: "https://spoonacular-fm.netlify.app",
   },
   {
@@ -48,7 +48,7 @@ export const projectsMap: ProjectModel[] = [
     image: MaptyImg,
     url: PROJECTS_PATH.MAPTY,
     descriptions:
-      "In Mapty puoi registrare i tuoi allenamenti relativi alla corsa o al ciclismo inserendo dei dati come distanza, tempo, andatura e passi/minuto.",
+      "Whit Mapty you can record your running or cycling related workouts by entering data such as distance, time, gain and steps/minute.",
     liveDemoUrl: "https://mapty-project-js.netlify.app",
   },
 ];
