@@ -1,5 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 import {
+  Accordion,
   Button,
   Container,
   CustomImage,
@@ -33,6 +34,7 @@ export const theme = extendTheme({
     CustomImage,
     Container,
     ProjectCard,
+    Accordion,
   },
   styles: {
     global,

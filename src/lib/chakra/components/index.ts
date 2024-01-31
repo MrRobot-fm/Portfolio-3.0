@@ -5,3 +5,4 @@ export * from "./button";
 export * from "./image";
 export * from "./container";
 export * from "./project-card";
+export * from "./accordion";

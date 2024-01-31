@@ -1,4 +1,17 @@
+import { keyframes } from "@emotion/react";
 import { Variants } from "framer-motion";
+
+const scroll = keyframes`
+    0%{
+        transform: translateX(0);
+    }
+    
+    100%{
+        transform: translateX(-100%);
+    }
+`;
+
+export const infiniteScrollAnimation = `${scroll} 10s linear infinite`;
 
 export const moveRightAndShow = ({
   state,
@@ -15,7 +28,7 @@ export const moveRightAndShow = ({
   };
 };
 
-export const moveRightAndShowVariant: Variants = {
+export const moveRightAndShowVariant50: Variants = {
   hidden: {
     x: "-50%",
     opacity: 0,
@@ -27,7 +40,19 @@ export const moveRightAndShowVariant: Variants = {
   },
 };
 
-export const moveLeftAndShowVariant: Variants = {
+export const moveRightAndShowVariant10: Variants = {
+  hidden: {
+    x: "-10%",
+    opacity: 0,
+  },
+  show: {
+    x: "0%",
+    opacity: 1,
+    transition: { duration: 0.8, type: "tween" },
+  },
+};
+
+export const moveLeftAndShowVariant50: Variants = {
   hidden: {
     x: "50%",
     opacity: 0,
@@ -39,7 +64,7 @@ export const moveLeftAndShowVariant: Variants = {
   },
 };
 
-export const moveUpScaleAndShowVariant: Variants = {
+export const moveUpScaleAndShowVariant50: Variants = {
   hidden: {
     y: "50%",
     opacity: 0,
@@ -53,7 +78,7 @@ export const moveUpScaleAndShowVariant: Variants = {
   },
 };
 
-export const moveDownAndShowVariant: Variants = {
+export const moveDownAndShowVariant50: Variants = {
   hidden: {
     y: "-50%",
     opacity: 0,

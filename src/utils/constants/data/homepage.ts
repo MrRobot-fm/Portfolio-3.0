@@ -1,10 +1,13 @@
 import { projectsMap } from "@/utils/constants/projects-map";
 import type { HeroSectionProps } from "@/components/organism/HeroSection/HeroSection.props";
 import type { ProjectsSectionProps } from "@/components/organism/ProjectsSection/ProjectsSections.props";
+import type { SkillsSectionProps } from "@/components/organism/SkillsSection/SkillsSection.props";
+import { techLogoMap } from "../skills-logo-map";
 
 type HomePageDataModel = {
   heroBlock: HeroSectionProps;
   projectsBlock: ProjectsSectionProps;
+  skillsBlock: SkillsSectionProps;
 };
 
 export const homepageData: HomePageDataModel = {
@@ -17,5 +20,37 @@ export const homepageData: HomePageDataModel = {
   },
   projectsBlock: {
     projects: projectsMap,
+  },
+  skillsBlock: {
+    sectionTitle: " My Skills",
+    skills: [
+      {
+        title: "Languages & Markups",
+        tech: ["Html", "Css", "Sass", "Javascript", "Typescript"],
+      },
+      {
+        title: "Libraries & Frameworks",
+        tech: [
+          "React",
+          "Next Js",
+          "Redux Toolkit",
+          "Tailwind Css",
+          "Tailwind Variants",
+          "Chakra UI",
+          "Tanstack Query",
+          "React Hook Form",
+          "Framer Motion",
+        ],
+      },
+      {
+        title: "Code Quality & Standards",
+        tech: ["Prettier", "ESLint", "Husky", "Conventional Commits"],
+      },
+      {
+        title: "Tools & Platforms",
+        tech: ["Git", "Github", "Figma", "Trello", "Slack"],
+      },
+    ],
+    techLogos: techLogoMap,
   },
 };
