@@ -16,14 +16,19 @@ export const HeroSection = (props: HeroSectionProps) => {
         <Text color="dark.70" fontWeight="bold">
           {label}
         </Text>
-        <Heading as="h1">
+        <Heading as="h1" color="dark.70">
           {title}
           <Text as="span" display="block" size="display" color="lightOrange">
             {subTitle}
           </Text>
         </Heading>
       </Flex>
-      <Button label={ctaLabel} variant="primary" icon={{ name: "arrow" }} />
+      <Button
+        url="#projects"
+        label={ctaLabel}
+        variant="primary"
+        icon={{ name: "arrow" }}
+      />
     </Flex>
   );
 };
