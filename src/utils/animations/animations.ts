@@ -68,12 +68,26 @@ export const moveUpScaleAndShowVariant50: Variants = {
   hidden: {
     y: "50%",
     opacity: 0,
-    scale: 0.96,
+    scale: 0.98,
   },
   show: {
     y: 0,
     opacity: 1,
     scale: 1,
+    transition: { duration: 0.6, type: "tween" },
+  },
+};
+
+export const moveUpScaleAndShowVariant100px: Variants = {
+  hidden: {
+    y: 100,
+    scale: 0.98,
+    opacity: 0,
+  },
+  show: {
+    y: 0,
+    scale: 1,
+    opacity: 1,
     transition: { duration: 0.6, type: "tween" },
   },
 };
@@ -87,5 +101,20 @@ export const moveDownAndShowVariant50: Variants = {
     y: 0,
     opacity: 1,
     transition: { duration: 0.6, type: "tween" },
+  },
+};
+
+export const projectCardShowAndScaleVariant: Variants = {
+  hidden: {
+    opacity: 0,
+    scale: 0.9,
+  },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.7,
+      delay: 0.7,
+    },
   },
 };
