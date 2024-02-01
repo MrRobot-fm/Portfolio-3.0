@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import NextLink from "next/link";
-import { moveUpScaleAndShowVariant50 } from "@/utils/animations/animations";
+import { projectCardShowAndScaleVariant } from "@/utils/animations/animations";
 import { Button } from "@/components/atoms/Button/Button";
 import { CustomImage } from "@/components/atoms/CustomImage/CustomImage";
 import type { ProjectCardProps } from "./ProjectCardProps";
@@ -34,12 +34,23 @@ export const ProjectCard = (props: ProjectCardProps) => {
   return (
     <LinkBox sx={styles.linkBox}>
       <chakra.div __css={styles.root}>
-        <chakra.div __css={styles.cardWrapper} {...rest}>
+        <chakra.div
+          as={motion.div}
+          __css={styles.cardWrapper}
+          {...rest}
+          initial={{ width: 0, opacity: 0 }}
+          whileInView={{
+            width: "100%",
+            opacity: 1,
+            transition: { duration: 0.6, type: "tween" },
+          }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <chakra.div __css={styles.infoWrapper}>
             <chakra.div
               as={motion.div}
               __css={styles.descriptionWrapper}
-              variants={moveUpScaleAndShowVariant50}
+              variants={projectCardShowAndScaleVariant}
               initial="hidden"
               whileInView="show"
               viewport={{ amount: 0.3, once: true }}
@@ -53,7 +64,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
             <chakra.div
               as={motion.div}
               __css={styles.buttonWrapper}
-              variants={moveUpScaleAndShowVariant50}
+              variants={projectCardShowAndScaleVariant}
               initial="hidden"
               whileInView="show"
               viewport={{ amount: 0.3, once: true }}
@@ -73,7 +84,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
             <chakra.div
               as={motion.div}
               __css={styles.imageContainer}
-              variants={moveUpScaleAndShowVariant50}
+              variants={projectCardShowAndScaleVariant}
               initial="hidden"
               whileInView="show"
               viewport={{ amount: 0.3, once: true }}

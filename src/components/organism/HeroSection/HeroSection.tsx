@@ -1,4 +1,5 @@
 import { Flex, Heading, Text } from "@chakra-ui/react";
+import { PAGES_PATH } from "@/utils/constants/pages-path";
 import { Button } from "@/components/atoms/Button/Button";
 import type { HeroSectionProps } from "./HeroSection.props";
 
@@ -24,7 +25,7 @@ export const HeroSection = (props: HeroSectionProps) => {
         </Heading>
       </Flex>
       <Button
-        url="#projects"
+        url={PAGES_PATH.PROJECTS}
         label={ctaLabel}
         variant="primary"
         icon={{ name: "arrow" }}
