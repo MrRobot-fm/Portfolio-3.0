@@ -12,3 +12,10 @@ export const PAGES_PATH = {
   ABOUT_ME: "/#about",
   CONTACTS: "/contacts",
 };
+
+export const SOCIAL_PATH = {
+  LINKEDIN: "https://www.linkedin.com/in/federicomigliore/",
+  GITHUB: "https://github.com/MrRobot-fm",
+  EMAIL: "mailto:federicomiglioredev@gmail.com",
+  INSTAGRAM: "https://www.instagram.com/federix_aegon/",
+};

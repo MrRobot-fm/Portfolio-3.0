@@ -7,9 +7,9 @@ import useBreakpoints from "@/hooks/use-breakpoints";
 import { CustomImage } from "@/components/atoms/CustomImage/CustomImage";
 import { Icon } from "@/components/atoms/Icon/Icon";
 import { NavLink } from "@/components/atoms/NavLink/NavLink";
+import { DropdownMenu } from "@/components/molecules/DropdownMenu/DropdownMenu";
 import Logo from "@/assets/portfolio-logo.svg";
-import { DropdownMenu } from "../DropdownMenu/DropdownMenu";
-import { NavbarProps } from "./Navbar.props";
+import type { NavbarProps } from "./Navbar.props";
 
 export const Navbar = (props: NavbarProps) => {
   const { links } = props;

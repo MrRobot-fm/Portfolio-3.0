@@ -1,5 +1,5 @@
 import { keyframes } from "@emotion/react";
-import { Variants } from "framer-motion";
+import type { Variants } from "framer-motion";
 
 const scroll = keyframes`
     0%{
@@ -117,4 +117,44 @@ export const projectCardShowAndScaleVariant: Variants = {
       delay: 0.7,
     },
   },
+};
+
+export const staggeredMoveUpAndShow50px = ({
+  index,
+}: {
+  index: number;
+}): Variants => {
+  return {
+    hidden: {
+      opacity: 0,
+      y: 50,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.4,
+        delay: index * 0.2,
+        type: "tween",
+      },
+    },
+  };
+};
+
+export const moveRightAndShow100px = ({
+  delay = 0,
+}: {
+  delay?: number;
+}): Variants => {
+  return {
+    hidden: {
+      x: -100,
+      opacity: 0,
+    },
+    show: {
+      x: 0,
+      opacity: 1,
+      transition: { duration: 0.6, ...(delay && { delay }), type: "tween" },
+    },
+  };
 };
