@@ -17,7 +17,7 @@ export const HeroSection = (props: HeroSectionProps) => {
       gap={{ base: 48, md: 80 }}
       {...sectionProps}
     >
-      <Flex flexDir="column" gap={40}>
+      <Flex flexDir="column" gap={30}>
         <Text
           as={motion.p}
           color="dark.70"
