@@ -9,7 +9,7 @@ export const useParallax = () => {
     offset: ["start start", "end start"],
   });
 
-  const background = useTransform(scrollYProgress, [0, 1], ["100%", "0%"]);
+  const background = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return { ref, background };
 };

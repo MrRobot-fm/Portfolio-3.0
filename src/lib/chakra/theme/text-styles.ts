@@ -5,6 +5,13 @@ export const textStyles = {
     fontSize: { base: 32, md: 52, xl: 64 },
     lineHeight: "120%",
   },
+  displayBig: {
+    fontFamily: "heading",
+    fontWeight: 800,
+    fontSize: { base: 38, md: 60, xl: 85 },
+    lineHeight: "120%",
+    textTransform: "uppercase",
+  },
   heading1: {
     fontFamily: "heading",
     fontWeight: 800,

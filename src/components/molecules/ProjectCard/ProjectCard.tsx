@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import NextLink from "next/link";
-import { projectCardShowAndScaleVariant } from "@/utils/animations/animations";
+import { showAndScaleVariant } from "@/utils/animations/animations";
 import { Button } from "@/components/atoms/Button/Button";
 import { CustomImage } from "@/components/atoms/CustomImage/CustomImage";
 import type { ProjectCardProps } from "./ProjectCardProps";
@@ -44,16 +44,16 @@ export const ProjectCard = (props: ProjectCardProps) => {
             opacity: 1,
             transition: { duration: 0.6, type: "tween" },
           }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           <chakra.div __css={styles.infoWrapper}>
             <chakra.div
               as={motion.div}
               __css={styles.descriptionWrapper}
-              variants={projectCardShowAndScaleVariant}
+              variants={showAndScaleVariant({ delay: 0.7 })}
               initial="hidden"
               whileInView="show"
-              viewport={{ amount: 0.3, once: true }}
+              viewport={{ amount: 0.4, once: true }}
             >
               <chakra.p __css={styles.projectLabel}>{`(${tag})`}</chakra.p>
               <chakra.h2 __css={styles.projectName}>{projectName}</chakra.h2>
@@ -64,10 +64,10 @@ export const ProjectCard = (props: ProjectCardProps) => {
             <chakra.div
               as={motion.div}
               __css={styles.buttonWrapper}
-              variants={projectCardShowAndScaleVariant}
+              variants={showAndScaleVariant({ delay: 0.7 })}
               initial="hidden"
               whileInView="show"
-              viewport={{ amount: 0.3, once: true }}
+              viewport={{ once: true }}
               zIndex={100}
             >
               <Button
@@ -75,7 +75,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
                 label="live demo"
                 size="link"
                 icon={{ name: "arrow" }}
-                textStyle="body"
+                textStyle={{ base: "body", md: "heading3", xl: "heading4" }}
                 fontWeight={700}
               />
             </chakra.div>
@@ -84,10 +84,10 @@ export const ProjectCard = (props: ProjectCardProps) => {
             <chakra.div
               as={motion.div}
               __css={styles.imageContainer}
-              variants={projectCardShowAndScaleVariant}
+              variants={showAndScaleVariant({ delay: 0.7 })}
               initial="hidden"
               whileInView="show"
-              viewport={{ amount: 0.3, once: true }}
+              viewport={{ amount: 0.4, once: true }}
             >
               <chakra.div __css={styles.imageWrapper}>
                 <CustomImage src={image} alt={projectName} imageFit="contain" />

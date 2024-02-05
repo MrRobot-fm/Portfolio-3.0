@@ -24,7 +24,7 @@ export const homepageData: HomePageDataModel = {
     projects: projectsMap,
   },
   skillsBlock: {
-    sectionTitle: " My Skills",
+    sectionTitle: "My Skills",
     skills: [
       {
         title: "Languages & Markups",

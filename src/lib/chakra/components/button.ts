@@ -138,6 +138,36 @@ const variants = {
       },
     };
   },
+
+  tertiary: ({ colorScheme = "light" }: StyleFunctionProps) => {
+    const isDark = colorScheme === "dark";
+
+    return {
+      root: {
+        bg: isDark ? "primary.black" : "primary.white",
+        color: isDark ? "primary.white" : "primary.black",
+        borderWidth: 1,
+        borderColor: "primary.black",
+        px: 24,
+        py: 8,
+        rounded: 0,
+
+        _hover: {
+          bg: isDark ? "primary.white" : "primary.black",
+          color: isDark ? "primary.black" : "primary.white",
+          borderWidth: 1,
+          borderColor: isDark ? "primary.black" : "none",
+          borderStyle: "solid",
+        },
+      },
+
+      icon: {
+        _groupHover: {
+          transform: "rotate(45deg)",
+        },
+      },
+    };
+  },
 };
 
 export const Button = defineMultiStyleConfig({
