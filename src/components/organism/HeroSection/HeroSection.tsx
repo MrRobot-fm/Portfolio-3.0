@@ -21,6 +21,7 @@ export const HeroSection = (props: HeroSectionProps) => {
         <Text
           as={motion.p}
           color="dark.70"
+          size="heading4"
           fontWeight="bold"
           variants={moveRightAndShow100px({})}
           initial="hidden"

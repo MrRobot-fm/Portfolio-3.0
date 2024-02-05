@@ -8,5 +8,6 @@ export const global = {
     overscrollBehavior: "none",
     textStyles: "body",
     color: "primary.black",
+    cursor: { lg: "none" },
   },
 };
