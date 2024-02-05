@@ -46,15 +46,15 @@ export const ProjectCard = (props: ProjectCardProps) => {
           }}
           viewport={{ once: true, amount: 0.1 }}
         >
-          <chakra.div __css={styles.infoWrapper}>
-            <chakra.div
-              as={motion.div}
-              __css={styles.descriptionWrapper}
-              variants={showAndScaleVariant({ delay: 0.7 })}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ amount: 0.4, once: true }}
-            >
+          <chakra.div
+            as={motion.div}
+            __css={styles.infoWrapper}
+            variants={showAndScaleVariant({ delay: 0.7 })}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ amount: 0.4, once: true }}
+          >
+            <chakra.div __css={styles.descriptionWrapper}>
               <chakra.p __css={styles.projectLabel}>{`(${tag})`}</chakra.p>
               <chakra.h2 __css={styles.projectName}>{projectName}</chakra.h2>
               <chakra.p __css={styles.projectDescription}>
@@ -75,7 +75,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
                 label="live demo"
                 size="link"
                 icon={{ name: "arrow" }}
-                textStyle={{ base: "body", md: "heading3", xl: "heading4" }}
+                textStyle={{ base: "body", md: "heading3", lg: "heading4" }}
                 fontWeight={700}
               />
             </chakra.div>

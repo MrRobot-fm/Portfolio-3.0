@@ -2,10 +2,10 @@
 
 import { Flex, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import { moveRightAndShowVariant10 } from "@/utils/animations/animations";
+import { moveUpScaleAndShowVariant100px } from "@/utils/animations/animations";
 import { InfiniteScrollBlock } from "@/components/molecules/InfiniteScrollBlock/InfiniteScrollBlock";
 import { SkillsAccordion } from "@/components/molecules/SkillsAccordion/SkillsAccordion";
-import { SkillsSectionProps } from "./SkillsSection.props";
+import type { SkillsSectionProps } from "./SkillsSection.props";
 
 export const SkillsSection = (props: SkillsSectionProps) => {
   const { sectionTitle, skills, techLogos } = props;
@@ -16,7 +16,7 @@ export const SkillsSection = (props: SkillsSectionProps) => {
       flexDir="column"
       gap={{ base: 40, md: 90 }}
       py={60}
-      variants={moveRightAndShowVariant10}
+      variants={moveUpScaleAndShowVariant100px({})}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.4 }}

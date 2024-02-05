@@ -13,7 +13,7 @@ export const HeroSection = (props: HeroSectionProps) => {
   return (
     <Flex
       flexDir="column"
-      maxW={{ base: 1200, xl: 1600 }}
+      maxW={{ base: 1200, xl: 1300 }}
       gap={{ base: 48, md: 80 }}
       {...sectionProps}
     >

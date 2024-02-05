@@ -38,7 +38,8 @@ export default function ProjectDetailsPage({
           w="full"
           flexDir="column"
           alignItems="center"
-          gap={68}
+          overflow="hidden"
+          gap={{ base: 38, lg: 108 }}
         >
           <Flex
             display="flex"
@@ -107,13 +108,7 @@ export default function ProjectDetailsPage({
             />
           </Box>
 
-          <Flex
-            flexDir="column"
-            gap={{ base: 90, md: 180 }}
-            py={80}
-            maxW={840}
-            overflow="hidden"
-          >
+          <Flex flexDir="column" gap={{ base: 90, md: 180 }} py={80} maxW={840}>
             {project.info.map((detail, index) => {
               const isReverse = index % 2 === 0 ? false : true;
               return (
