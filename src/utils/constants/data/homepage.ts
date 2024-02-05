@@ -16,7 +16,7 @@ export const homepageData: HomePageDataModel = {
   heroBlock: {
     label: "Stop thinking, start doing!",
     title:
-      "Hi there, my name is Federico and i'm a passionate Front-end developer.",
+      "Hi there! My name is Federico and i'm a passionate Front-end developer.",
     subTitle: "Let's discover my world!",
     ctaLabel: "My projects",
   },
