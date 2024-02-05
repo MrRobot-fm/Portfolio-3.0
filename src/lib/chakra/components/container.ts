@@ -4,6 +4,7 @@ const baseStyle = {
   maxW: "full",
   display: "flex",
   flexDir: "column",
+  overflow: "hidden",
   gap: { base: 80, md: 120, lg: 160, xl: 240 },
 };
 

@@ -63,18 +63,18 @@ const baseStyle = definePartsStyle({
     textTransform: "uppercase",
   },
   projectLabel: {
-    textStyle: { base: "body", lg: "heading4", xl: "heading3" },
+    textStyle: { base: "body", md: "heading3", lg: "heading4", xl: "heading3" },
     textTransform: "uppercase",
   },
   descriptionWrapper: {
-    w: { base: "full", md: "70%", lg: "full", xl: "80%" },
+    w: { base: "full", md: "90%", lg: "full", xl: "80%" },
     display: "flex",
     flexDir: "column",
     gap: 24,
     textAlign: { base: "center", lg: "start" },
   },
   projectDescription: {
-    textStyle: { base: "body", md: "heading4", xl: "heading3" },
+    textStyle: { base: "body", md: "heading2", xl: "heading3" },
     fontWeight: { xl: 500 },
     color: "grey.20",
     textAlign: {
@@ -93,7 +93,7 @@ const sizes = {
     imageWrapper: {
       aspectRatio: "4/3",
       maxW: { base: 390, md: 638, lg: 725, xl: 800 },
-      h: { base: 203, sm: 270, md: 307, lg: 454, xl: 551 },
+      h: { base: 233, sm: 270, md: 387, lg: 454, xl: 551 },
     },
   }),
 };

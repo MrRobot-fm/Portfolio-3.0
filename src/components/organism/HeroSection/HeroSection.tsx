@@ -9,7 +9,7 @@ export const HeroSection = (props: HeroSectionProps) => {
   return (
     <Flex
       flexDir="column"
-      maxW={1200}
+      maxW={{ base: 1200, xl: 1600 }}
       gap={{ base: 48, md: 80 }}
       {...sectionProps}
     >
@@ -17,9 +17,9 @@ export const HeroSection = (props: HeroSectionProps) => {
         <Text color="dark.70" fontWeight="bold">
           {label}
         </Text>
-        <Heading as="h1" color="dark.70">
+        <Heading as="h1" size="displayBig" color="dark.70">
           {title}
-          <Text as="span" display="block" size="display" color="lightOrange">
+          <Text as="span" display="block" size="displayBig" color="lightOrange">
             {subTitle}
           </Text>
         </Heading>

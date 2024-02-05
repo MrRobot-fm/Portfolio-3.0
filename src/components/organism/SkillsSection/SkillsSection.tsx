@@ -21,8 +21,13 @@ export const SkillsSection = (props: SkillsSectionProps) => {
       whileInView="show"
       viewport={{ once: true, amount: 0.4 }}
     >
-      <Text size="heading2" fontWeight={500} color="lightOrange">
-        {sectionTitle}
+      <Text
+        size="heading3"
+        fontWeight={500}
+        textTransform="uppercase"
+        color="lightOrange"
+      >
+        {`(${sectionTitle})`}
       </Text>
       <SkillsAccordion skills={skills} />
       <InfiniteScrollBlock techLogos={techLogos} />
