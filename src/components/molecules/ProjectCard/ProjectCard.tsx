@@ -64,7 +64,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
             <chakra.div
               as={motion.div}
               __css={styles.buttonWrapper}
-              variants={showAndScaleVariant({ delay: 0.7 })}
+              variants={showAndScaleVariant({ delay: 0.6 })}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}

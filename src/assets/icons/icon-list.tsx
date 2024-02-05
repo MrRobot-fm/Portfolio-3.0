@@ -42,9 +42,61 @@ export const ArrowDown = (props: IconProps) => (
   </Icon>
 );
 
+export const AppLogo = (props: IconProps) => (
+  <Icon
+    viewBox="0 0 26 26"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <mask
+      id="mask0_1_831"
+      maskUnits="userSpaceOnUse"
+      x="0"
+      y="0"
+      width="26"
+      height="26"
+    >
+      <path
+        d="M13 26C20.1797 26 26 20.1797 26 13C26 5.8203 20.1797 0 13 0C5.8203 0 0 5.8203 0 13C0 20.1797 5.8203 26 13 26Z"
+        fill="white"
+      />
+    </mask>
+    <g mask="url(#mask0_1_831)">
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M21 17.9808L13.5359 13.3397L6 18L21 17.9808Z"
+        fill="#662D91"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M13.5383 4L13.5359 13.3397L21 17.9808L13.5383 4Z"
+        fill="#9E1F63"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M6 18L13.5359 13.3397L13.5383 4L6 18Z"
+        fill="#FF5000"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M13.5206 9.66571L10.4393 15.2547H16.6158L13.5206 9.66571Z"
+        fill="white"
+        stroke="#FF5000"
+        strokeWidth="0.5"
+      />
+    </g>
+  </Icon>
+);
+
 export const Icons = {
   Hamburger,
   Close,
   Arrow,
   ArrowDown,
+  AppLogo,
 };

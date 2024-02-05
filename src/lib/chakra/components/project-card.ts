@@ -68,6 +68,7 @@ const baseStyle = definePartsStyle({
   },
   descriptionWrapper: {
     w: { base: "full", md: "90%", lg: "full", xl: "80%" },
+    h: "fit-content",
     display: "flex",
     flexDir: "column",
     gap: 24,

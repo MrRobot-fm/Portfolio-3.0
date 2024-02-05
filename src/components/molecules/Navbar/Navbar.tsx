@@ -4,11 +4,9 @@ import { Box, Flex, UnorderedList, useDisclosure } from "@chakra-ui/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import useBreakpoints from "@/hooks/use-breakpoints";
-import { CustomImage } from "@/components/atoms/CustomImage/CustomImage";
 import { Icon } from "@/components/atoms/Icon/Icon";
 import { NavLink } from "@/components/atoms/NavLink/NavLink";
 import { DropdownMenu } from "@/components/molecules/DropdownMenu/DropdownMenu";
-import Logo from "@/assets/portfolio-logo.svg";
 import type { NavbarProps } from "./Navbar.props";
 
 export const Navbar = (props: NavbarProps) => {
@@ -66,9 +64,7 @@ export const Navbar = (props: NavbarProps) => {
           zIndex={100}
         >
           <Link href="/" onClick={onClose}>
-            <Box h={30} w={180}>
-              <CustomImage src={Logo} alt="app-logo" />
-            </Box>
+            <Icon name="appLogo" w={80} h={80} />
           </Link>
         </Box>
         <UnorderedList
