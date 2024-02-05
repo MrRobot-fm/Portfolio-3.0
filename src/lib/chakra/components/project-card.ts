@@ -74,8 +74,8 @@ const baseStyle = definePartsStyle({
     textAlign: { base: "center", lg: "start" },
   },
   projectDescription: {
-    textStyle: { base: "body", md: "heading2", xl: "heading3" },
-    fontWeight: { xl: 500 },
+    textStyle: { base: "body", md: "heading2", lg: "heading3" },
+    fontWeight: { base: 400, md: 400, lg: 500 },
     color: "grey.20",
     textAlign: {
       base: "center",

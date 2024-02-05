@@ -10,7 +10,7 @@ export const PAGES_PATH = {
   PROJECTS: "/#projects",
   SKILLS: "/#skills",
   ABOUT_ME: "/#about",
-  CONTACTS: "/contacts",
+  CONTACTS: "/#contacts",
 };
 
 export const SOCIAL_PATH = {
