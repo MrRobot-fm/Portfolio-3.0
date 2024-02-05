@@ -4,7 +4,7 @@ import { Flex, Text, UnorderedList, VStack } from "@chakra-ui/react";
 import dayjs from "dayjs";
 import { motion } from "framer-motion";
 import { moveRightAndShow100px } from "@/utils/animations/animations";
-import { PAGES_PATH } from "@/utils/constants/pages-path";
+import { SOCIAL_PATH } from "@/utils/constants/pages-path";
 import { Button } from "@/components/atoms/Button/Button";
 import { FooterLegalInfo } from "@/components/atoms/FooterLegalInfo/FooterLegalInfo";
 import { NavLink } from "@/components/atoms/NavLink/NavLink";
@@ -20,6 +20,7 @@ export const Footer = (props: FooterProps) => {
   return (
     <VStack
       as="footer"
+      id="contacts"
       spacing={40}
       bg="primary.black"
       p={{ base: 30, md: 80 }}
@@ -47,7 +48,7 @@ export const Footer = (props: FooterProps) => {
             </Text>
           </VStack>
           <Button
-            url={PAGES_PATH.CONTACTS}
+            url={SOCIAL_PATH.EMAIL}
             label={ctaLabel}
             variant="secondary"
             icon={{ name: "arrow" }}

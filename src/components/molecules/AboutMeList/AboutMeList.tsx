@@ -31,7 +31,7 @@ export const AboutMeList = ({
         </Text>
       </Box>
       <Flex flexDir={{ base: "column", md: "row" }}>
-        <Flex flexDir="column" flex={4} gap={40}>
+        <Flex flexDir="column" flex={5} gap={40}>
           {description.map((description, index) => (
             <Box
               key={index}

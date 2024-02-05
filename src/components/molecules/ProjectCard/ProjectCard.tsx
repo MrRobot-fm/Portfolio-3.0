@@ -44,7 +44,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
             opacity: 1,
             transition: { duration: 0.6, type: "tween" },
           }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           <chakra.div __css={styles.infoWrapper}>
             <chakra.div

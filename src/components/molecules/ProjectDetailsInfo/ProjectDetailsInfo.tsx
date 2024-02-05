@@ -47,6 +47,7 @@ export const ProjectDetailsInfo = ({
           <Box
             display="flex"
             flex={1}
+            px={5}
             justifyContent={{
               base: isReverse ? "end" : "start",
               lg: isReverse ? "start" : "end",
