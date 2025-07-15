@@ -1,4 +1,5 @@
 export const PROJECTS_PATH = {
+  VIONEX_FLOW: "/project/vionex-flow",
   TOKEN_DISCOVER: "/project/token-discover",
   FLIGHT_FOOTPRINT: "/project/flight-footprint",
   SPOONACULAR: "/project/spoonacular",

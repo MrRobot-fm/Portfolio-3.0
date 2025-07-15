@@ -1,5 +1,6 @@
 import ChakraLogo from "@/assets/tech-stack/chakra-ui.svg";
 import CsslLogo from "@/assets/tech-stack/css3.svg";
+import ExpressLogo from "@/assets/tech-stack/express.svg";
 import FigmaLogo from "@/assets/tech-stack/figma.svg";
 import FramerMotionLogo from "@/assets/tech-stack/framer-motion.svg";
 import GitLogo from "@/assets/tech-stack/git.svg";
@@ -7,6 +8,7 @@ import GithubLogo from "@/assets/tech-stack/github.svg";
 import HtmlLogo from "@/assets/tech-stack/html5.svg";
 import JsLogo from "@/assets/tech-stack/javascript.svg";
 import NextLogo from "@/assets/tech-stack/nextjs.svg";
+import NodeLogo from "@/assets/tech-stack/nodejs.svg";
 import TanstackQueryLogo from "@/assets/tech-stack/react-query.svg";
 import ReactRouterLogo from "@/assets/tech-stack/react-router.svg";
 import ReactLogo from "@/assets/tech-stack/react.svg";
@@ -64,6 +66,14 @@ export const techLogoMap: TechLogoMapModel[] = [
   {
     name: "tailwind",
     src: TailwindLogo,
+  },
+  {
+    name: "nodejs",
+    src: NodeLogo,
+  },
+  {
+    name: "express",
+    src: ExpressLogo,
   },
   {
     name: "framer-motion",

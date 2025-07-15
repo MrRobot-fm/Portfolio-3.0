@@ -7,6 +7,7 @@ import SpoonacularDetailImg from "@/assets/projects/spoonacular-detail-img.png";
 import SpoonacularMainImg from "@/assets/projects/spoonacular.png";
 import TokenDiscoverDetailImg from "@/assets/projects/token-discover-detail-img.png";
 import TokenDiscoverMainImg from "@/assets/projects/token-discover.png";
+import VionexFlowMainImg from "@/assets/projects/vionex-flow.png";
 
 export type ProjectDetailsDataModel = {
   name: string;
@@ -24,6 +25,26 @@ export type ProjectDetailsDataModel = {
 };
 
 export const projectDetailsData: ProjectDetailsDataModel[] = [
+  {
+    name: "Vionex Flow",
+    info: [
+      {
+        label: "Description",
+        text: "This project aims to provide an effective and user-friendly solution for project management. It is designed to help individuals and teams plan, organize, track, and collaborate on projects efficiently. Key features may include task assignment, progress tracking, deadlines, and reporting tools. The ultimate goal is to streamline workflows and improve productivity across various project stages.",
+      },
+      {
+        label: "Technologies",
+        text: "Turborepo, Next JS, Node, Express, Typescript, Tailwind Css, Shadcn/ui, Prisma, Supabase, Zod, Vitest, Cypress.",
+      },
+    ],
+    mainImage: VionexFlowMainImg,
+    links: [
+      {
+        label: "GitHub",
+        url: "https://github.com/MrRobot-fm/Vionex-Flow",
+      },
+    ],
+  },
   {
     name: "Token Discover",
     info: [

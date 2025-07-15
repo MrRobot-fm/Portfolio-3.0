@@ -3,6 +3,7 @@ import FlightFootprintImg from "@/assets/projects/flight-footprint.png";
 import MaptyImg from "@/assets/projects/mapty.png";
 import SpoonacularImg from "@/assets/projects/spoonacular.png";
 import TokenDiscoverImg from "@/assets/projects/token-discover.png";
+import VionexFlowImg from "@/assets/projects/vionex-flow.png";
 import { PROJECTS_PATH } from "./pages-path";
 
 export type ProjectModel = {
@@ -11,10 +12,18 @@ export type ProjectModel = {
   image: ImageProps["src"];
   url: string;
   descriptions: string;
-  liveDemoUrl: string;
+  liveDemoUrl?: string;
 };
 
 export const projectsMap: ProjectModel[] = [
+  {
+    projectName: "Vionex Flow",
+    tag: "work in progress",
+    image: VionexFlowImg,
+    url: PROJECTS_PATH.VIONEX_FLOW,
+    descriptions:
+      "A smart and intuitive platform for managing projects, tasks, and teams. Streamline workflows, boost productivity, and keep everything on track.",
+  },
   {
     projectName: "Token Discover",
     tag: "work",

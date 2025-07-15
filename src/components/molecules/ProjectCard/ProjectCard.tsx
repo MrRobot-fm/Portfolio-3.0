@@ -70,14 +70,16 @@ export const ProjectCard = (props: ProjectCardProps) => {
               viewport={{ once: true }}
               zIndex={100}
             >
-              <Button
-                url={liveDemoUrl}
-                label="live demo"
-                size="link"
-                icon={{ name: "arrow" }}
-                textStyle={{ base: "body", md: "heading3", lg: "heading4" }}
-                fontWeight={700}
-              />
+              {liveDemoUrl && (
+                <Button
+                  url={liveDemoUrl}
+                  label="live demo"
+                  size="link"
+                  icon={{ name: "arrow" }}
+                  textStyle={{ base: "body", md: "heading3", lg: "heading4" }}
+                  fontWeight={700}
+                />
+              )}
             </chakra.div>
           </chakra.div>
           <LinkOverlay as={NextLink} href={url}>

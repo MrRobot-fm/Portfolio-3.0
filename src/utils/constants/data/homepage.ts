@@ -28,21 +28,27 @@ export const homepageData: HomePageDataModel = {
     skills: [
       {
         title: "Languages & Markups",
-        tech: ["Html", "Css", "Sass", "Javascript", "Typescript"],
+        tech: ["Html", "Css", "Sass", "Javascript", "Typescript", "Node"],
       },
       {
         title: "Libraries & Frameworks",
         tech: [
           "React",
           "Next Js",
+          "Remix",
           "Redux Toolkit",
           "Tailwind Css",
-          "Tailwind Variants",
-          "Chakra UI",
+          "Express",
           "Tanstack Query",
+          "Prisma",
+          "Zod",
           "React Hook Form",
           "Framer Motion",
         ],
+      },
+      {
+        title: "Testing",
+        tech: ["Testing library", "Vitest", "Cypress"],
       },
       {
         title: "Code Quality & Standards",
@@ -50,7 +56,7 @@ export const homepageData: HomePageDataModel = {
       },
       {
         title: "Tools & Platforms",
-        tech: ["Git", "Github", "Figma", "Trello", "Slack"],
+        tech: ["Git", "Github", "Figma"],
       },
     ],
     techLogos: techLogoMap,

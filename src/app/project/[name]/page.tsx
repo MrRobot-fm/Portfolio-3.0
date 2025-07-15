@@ -107,7 +107,6 @@ export default function ProjectDetailsPage({
               imageFit="contain"
             />
           </Box>
-
           <Flex flexDir="column" gap={{ base: 90, md: 180 }} py={80} maxW={840}>
             {project.info.map((detail, index) => {
               const isReverse = index % 2 === 0 ? false : true;
@@ -122,24 +121,25 @@ export default function ProjectDetailsPage({
               );
             })}
           </Flex>
-
-          <Box
-            as={motion.div}
-            w="full"
-            maxH={{ lg: 541, xl: 761 }}
-            aspectRatio="4/3"
-            bg="primary.white"
-            variants={moveUpScaleAndShowVariant100px({})}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <CustomImage
-              src={project.detailImage}
-              alt={project.name}
-              imageFit="contain"
-            />
-          </Box>
+          {project.detailImage && (
+            <Box
+              as={motion.div}
+              w="full"
+              maxH={{ lg: 541, xl: 761 }}
+              aspectRatio="4/3"
+              bg="primary.white"
+              variants={moveUpScaleAndShowVariant100px({})}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <CustomImage
+                src={project.detailImage}
+                alt={project.name}
+                imageFit="contain"
+              />
+            </Box>
+          )}
           <Flex
             as={motion.div}
             w="full"
