@@ -34,7 +34,7 @@ export const projectDetailsData: ProjectDetailsDataModel[] = [
       },
       {
         label: "Technologies",
-        text: "Turborepo, Next JS, Node, Express, Typescript, Tailwind Css, Shadcn/ui, Prisma, Supabase, Zod, Vitest, Cypress.",
+        text: "Turborepo, Next JS, Node, Express, Typescript, Tailwind Css, Shadcn/ui, Prisma, Supabase, Zod, Vitest, Playwright.",
       },
     ],
     mainImage: VionexFlowMainImg,

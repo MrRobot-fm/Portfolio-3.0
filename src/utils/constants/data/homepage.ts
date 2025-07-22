@@ -48,7 +48,7 @@ export const homepageData: HomePageDataModel = {
       },
       {
         title: "Testing",
-        tech: ["Testing library", "Vitest", "Cypress"],
+        tech: ["Testing library", "Vitest", "Cypress", "Playwright"],
       },
       {
         title: "Code Quality & Standards",
